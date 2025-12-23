@@ -4,7 +4,7 @@ WORKDIR /src
 
 # Copy all files and restore dependencies
 COPY . .
-RUN dotnet restore "Practice1.sln"
+RUN dotnet restore "Practice1.slnx"
 
 # Build and publish the app
 RUN dotnet publish "Practice1.sln" -c Release -o /app/publish
